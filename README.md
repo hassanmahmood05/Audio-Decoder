@@ -123,15 +123,49 @@ The full example is in [`examples/demo_call.json`](examples/demo_call.json).
 flowchart LR
     A[Upload] -->|validate type, size, ffprobe| B[(Audio store<br/>content-addressed)]
     A -->|202 + job id| C[(Job DB)]
+    A -.->|"too many pending jobs: 429 + Retry-After"| X429([Client retries later])
     A --> Q[[Queue]]
     Q --> W[Worker pool]
     W --> I[Ingest<br/>ffmpeg → 16 kHz mono]
+    I -.->|"undecodable / too long: not retried"| JF([Job failed])
     I --> K[Chunk at pauses]
-    K --> T[Transcribe chunks<br/>parallel · retry · cache]
+    K --> T[Transcribe chunks<br/>parallel · retry · cache<br/>see diagram below]
     T --> M[Assemble<br/>offset + de-dup overlap]
     M --> P[Post-process<br/>hallucinations · confidence · PII]
     P --> R[(Transcript JSON<br/>+ segment rows)]
+    C -.->|"on restart: re-queue jobs left queued or processing"| Q
 ```
+
+### Retry and recovery
+
+Failures are handled per chunk (~30 s of audio), so one bad chunk costs one chunk, not the file.
+
+```mermaid
+flowchart TD
+    J1([Job runs]) --> S[Next speech chunk]
+    J2([Restart: unfinished jobs re-queued]) --> S
+    J3([Client re-submits a failed job]) --> S
+    S --> CC{"Chunk cached?<br/>sha256 + model + window"}
+    CC -->|yes| OK[Chunk result]
+    CC -->|no| TX["Transcribe, attempt n"]
+    TX -->|success| SV[(Save to chunk cache)]
+    SV --> OK
+    TX -->|"transient: OOM, timeout, connection"| RN{"n ≤ MAX_RETRIES?<br/>default 3"}
+    RN -->|yes| BO["Back off: 0.5 s × 2^(n-1) × random 0.5–1.5"]
+    BO --> TX
+    RN -->|no| CF[Chunk failed]
+    TX -->|"permanent: bug or bad input, no retry"| CF
+    CF --> GP["Time range recorded in gaps"]
+    OK --> AS[Assemble transcript]
+    GP --> AS
+    AS --> ST{"Any chunk failed?"}
+    ST -->|none| C1([completed])
+    ST -->|some| C2(["partial: text + gaps"])
+    ST -->|all| C3([failed])
+```
+
+Because every finished chunk is cached, a restart or a re-submission only redoes the chunks that are missing.
+Retry count and base delay are set by `AUDIO_DECODER_MAX_RETRIES` and `AUDIO_DECODER_RETRY_BASE_S`.
 
 ```
 src/audio_decoder/
