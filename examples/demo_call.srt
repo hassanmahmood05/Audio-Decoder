@@ -1,0 +1,91 @@
+1
+00:00:01,000 --> 00:00:08,308
+Good afternoon, thank you for calling Northwind Insurance claims. My name is Ayesha. How can I help you today?
+
+2
+00:00:09,108 --> 00:00:14,492
+Hi Ayesha, I need to report an accident. Someone hit my car yesterday evening.
+
+3
+00:00:15,192 --> 00:00:18,269
+I'm sorry to hear that. Is everyone okay?
+
+4
+00:00:18,869 --> 00:00:25,023
+Yes, thankfully nobody was hurt, but the rear bumper and the tail light are badly damaged.
+
+5
+00:00:25,923 --> 00:00:28,615
+Can I have your policy number please?
+
+6
+00:00:29,215 --> 00:00:30,369
+Sure, it's POL-48213377.
+
+7
+00:00:31,169 --> 00:00:34,631
+Thank you. And the best email to reach you?
+
+8
+00:00:35,131 --> 00:00:39,362
+It's [EMAIL], and my phone number is [PHONE].
+
+9
+00:00:40,362 --> 00:00:45,746
+Let me put you on a short hold while I pull up the policy.
+
+10
+00:01:36,246 --> 00:01:40,092
+Thank you for waiting. I have your policy open now.
+
+11
+00:01:40,292 --> 00:01:48,754
+So it happened around six thirty on the main road near the market and traffic was moving slowly because of the rain
+
+12
+00:01:48,854 --> 00:01:58,854
+and the car behind me did not stop in time and it went straight into the back of my car and pushed it forward a little
+
+13
+00:01:58,954 --> 00:02:07,031
+the other driver got out and apologised and we exchanged numbers and took photos of both cars and the number plates
+
+14
+00:02:07,131 --> 00:02:15,977
+then a police officer came over and wrote down what happened and gave me a reference slip which I still have with me
+
+15
+00:02:16,077 --> 00:02:25,308
+the bumper is cracked the left tail light is broken and the boot does not close properly anymore so I cannot drive it far
+
+16
+00:02:25,408 --> 00:02:34,254
+I took it to a garage this morning and they said the estimate would be around four thousand eight hundred and fifty dollars
+
+17
+00:02:34,354 --> 00:02:38,200
+uh it was the uh other driver's fault I think
+
+18
+00:02:38,900 --> 00:02:41,592
+Understood. I've opened claim CLM-2026-004417 for you.
+
+19
+00:02:45,385 --> 00:02:48,846
+For the deductible, can I take a card number?
+
+20
+00:02:49,446 --> 00:02:51,754
+Yes, it's [CARD].
+
+21
+00:02:57,592 --> 00:03:03,362
+Great, that's all done. An adjuster will call you within two business days. Anything else?
+
+22
+00:03:04,062 --> 00:03:06,754
+No, that's everything. Thanks for your help.
+
+23
+00:03:07,354 --> 00:03:09,662
+You're welcome. Have a good day.

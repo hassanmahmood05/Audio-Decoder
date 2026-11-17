@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0",
+  "status": "completed",
+  "source": {
+    "filename": "demo_call.wav",
+    "sha256": "c095a919b9350e84e07ab5b29ea5c9d0ace15bc3885e197684fc50a29a3757db",
+    "duration_s": 191.661,
+    "original_format": "wav",
+    "original_sample_rate": 44100,
+    "original_channels": 2
+  },
+  "backend": {
+    "name": "mock",
+    "fingerprint": "mock:25"
+  },
+  "language": "en",
+  "redacted": true,
+  "text": "Good afternoon, thank you for calling Northwind Insurance claims. My name is Ayesha. How can I help you today? Hi Ayesha, I need to report an accident. Someone hit my car yesterday evening. I'm sorry to hear that. Is everyone okay? Yes, thankfully nobody was hurt, but the rear bumper and the tail light are badly damaged. Can I have your policy number please? Sure, it's POL-48213377. Thank you. And the best email to reach you? It's [EMAIL], and my phone number is [PHONE]. Let me put you on a short hold while I pull up the policy. Thank you for waiting. I have your policy open now. So it happened around six thirty on the main road near the market and traffic was moving slowly because of the rain and the car behind me did not stop in time and it went straight into the back of my car and pushed it forward a little the other driver got out and apologised and we exchanged numbers and took photos of both cars and the number plates then a police officer came over and wrote down what happened and gave me a reference slip which I still have with me the bumper is cracked the left tail light is broken and the boot does not close properly anymore so I cannot drive it far I took it to a garage this morning and they said the estimate would be around four thousand eight hundred and fifty dollars uh it was the uh other driver's fault I think Understood. I've opened claim CLM-2026-004417 for you. For the deductible, can I take a card number? Yes, it's [CARD]. Great, that's all done. An adjuster will call you within two business days. Anything else? No, that's everything. Thanks for your help. You're welcome. Have a good day.",
+  "segments": [
+    {
+      "id": 0,
+      "start": 1.0,
+      "end": 8.308,
+      "text": "Good afternoon, thank you for calling Northwind Insurance claims. My name is Ayesha. How can I help you today?",
+      "chunk_index": 0,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 1,
+      "start": 9.108,
+      "end": 14.492,
+      "text": "Hi Ayesha, I need to report an accident. Someone hit my car yesterday evening.",
+      "chunk_index": 0,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 2,
+      "start": 15.192,
+      "end": 18.269,
+      "text": "I'm sorry to hear that. Is everyone okay?",
+      "chunk_index": 0,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 3,
+      "start": 18.869,
+      "end": 25.023,
+      "text": "Yes, thankfully nobody was hurt, but the rear bumper and the tail light are badly damaged.",
+      "chunk_index": 0,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 4,
+      "start": 25.923,
+      "end": 28.615,
+      "text": "Can I have your policy number please?",
+      "chunk_index": 0,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 5,
+      "start": 29.215,
+      "end": 30.369,
+      "text": "Sure, it's POL-48213377.",
+      "chunk_index": 0,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 6,
+      "start": 31.169,
+      "end": 34.631,
+      "text": "Thank you. And the best email to reach you?",
+      "chunk_index": 1,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 7,
+      "start": 35.131,
+      "end": 39.362,
+      "text": "It's [EMAIL], and my phone number is [PHONE].",
+      "chunk_index": 1,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": [
+        "redacted_email",
+        "redacted_phone"
+      ]
+    },
+    {
+      "id": 8,
+      "start": 40.362,
+      "end": 45.746,
+      "text": "Let me put you on a short hold while I pull up the policy.",
+      "chunk_index": 1,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 9,
+      "start": 96.246,
+      "end": 100.092,
+      "text": "Thank you for waiting. I have your policy open now.",
+      "chunk_index": 3,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 10,
+      "start": 100.292,
+      "end": 108.754,
+      "text": "So it happened around six thirty on the main road near the market and traffic was moving slowly because of the rain",
+      "chunk_index": 3,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 11,
+      "start": 108.854,
+      "end": 118.854,
+      "text": "and the car behind me did not stop in time and it went straight into the back of my car and pushed it forward a little",
+      "chunk_index": 3,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 12,
+      "start": 118.954,
+      "end": 127.031,
+      "text": "the other driver got out and apologised and we exchanged numbers and took photos of both cars and the number plates",
+      "chunk_index": 3,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 13,
+      "start": 127.131,
+      "end": 135.977,
+      "text": "then a police officer came over and wrote down what happened and gave me a reference slip which I still have with me",
+      "chunk_index": 4,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 14,
+      "start": 136.077,
+      "end": 145.308,
+      "text": "the bumper is cracked the left tail light is broken and the boot does not close properly anymore so I cannot drive it far",
+      "chunk_index": 4,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 15,
+      "start": 145.408,
+      "end": 154.254,
+      "text": "I took it to a garage this morning and they said the estimate would be around four thousand eight hundred and fifty dollars",
+      "chunk_index": 4,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 16,
+      "start": 154.354,
+      "end": 158.2,
+      "text": "uh it was the uh other driver's fault I think",
+      "chunk_index": 4,
+      "avg_logprob": -1.35,
+      "no_speech_prob": 0.02,
+      "flags": [
+        "low_confidence"
+      ]
+    },
+    {
+      "id": 17,
+      "start": 158.9,
+      "end": 161.592,
+      "text": "Understood. I've opened claim CLM-2026-004417 for you.",
+      "chunk_index": 4,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 18,
+      "start": 165.385,
+      "end": 168.846,
+      "text": "For the deductible, can I take a card number?",
+      "chunk_index": 5,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 19,
+      "start": 169.446,
+      "end": 171.754,
+      "text": "Yes, it's [CARD].",
+      "chunk_index": 5,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": [
+        "redacted_card"
+      ]
+    },
+    {
+      "id": 20,
+      "start": 177.592,
+      "end": 183.362,
+      "text": "Great, that's all done. An adjuster will call you within two business days. Anything else?",
+      "chunk_index": 5,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 21,
+      "start": 184.062,
+      "end": 186.754,
+      "text": "No, that's everything. Thanks for your help.",
+      "chunk_index": 5,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    },
+    {
+      "id": 22,
+      "start": 187.354,
+      "end": 189.662,
+      "text": "You're welcome. Have a good day.",
+      "chunk_index": 5,
+      "avg_logprob": -0.25,
+      "no_speech_prob": 0.02,
+      "flags": []
+    }
+  ],
+  "gaps": [],
+  "chunks": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 30.43,
+      "cut": "silence",
+      "status": "ok",
+      "attempts": 1,
+      "error": null,
+      "duration_ms": 1.6
+    },
+    {
+      "index": 1,
+      "start": 30.43,
+      "end": 60.43,
+      "cut": "silence",
+      "status": "ok",
+      "attempts": 1,
+      "error": null,
+      "duration_ms": 2.6
+    },
+    {
+      "index": 2,
+      "start": 60.43,
+      "end": 90.43,
+      "cut": "silence",
+      "status": "skipped_silence",
+      "attempts": 0,
+      "error": null,
+      "duration_ms": 0.0
+    },
+    {
+      "index": 3,
+      "start": 90.43,
+      "end": 135.43,
+      "cut": "hard",
+      "status": "ok",
+      "attempts": 1,
+      "error": null,
+      "duration_ms": 6.2
+    },
+    {
+      "index": 4,
+      "start": 133.43,
+      "end": 164.86,
+      "cut": "silence",
+      "status": "ok",
+      "attempts": 1,
+      "error": null,
+      "duration_ms": 1.3
+    },
+    {
+      "index": 5,
+      "start": 164.86,
+      "end": 191.661,
+      "cut": "end",
+      "status": "ok",
+      "attempts": 1,
+      "error": null,
+      "duration_ms": 1.2
+    }
+  ],
+  "stats": {
+    "chunks": 6,
+    "chunks_skipped_silence": 1,
+    "chunks_failed": 0,
+    "chunks_cached": 0,
+    "segments": 23,
+    "words": 304,
+    "words_per_minute": 95.2,
+    "low_confidence_segments": 1,
+    "processing_s": 0.033,
+    "real_time_factor": 0.0002
+  },
+  "created_at": "2026-11-16T11:42:15.490136Z"
+}
